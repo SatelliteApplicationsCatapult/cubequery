@@ -39,6 +39,8 @@ def _task_info(clazz):
     :param clazz: class object you need metadata for
     :return: a metadata dictionary
     """
+    
+    ## Do we need this?
     params = []
     for e in clazz.parameters:
         params += [{
@@ -54,6 +56,7 @@ def _task_info(clazz):
         "display_name": clazz.display_name,
         "description": clazz.description,
         "args": params,
+        "img_url": clazz.img_url,
     }
 
 
